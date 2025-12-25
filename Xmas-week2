@@ -1,12 +1,16 @@
 -- hello
-local function checkGetGC()
-    if getgc and type(getgc) == "function" then
-        return true
-    end
-    return false
+local function checkExecutorStrength()
+
+    local success = pcall(function()
+        setreadonly(string, false)
+        string.test = function() end
+        setreadonly(string, true)
+    end)
+    
+    return success
 end
 
-if checkGetGC() then
+if checkExecutorStrength() then
     print("✓ strong executor, loading normal version...")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/PabloOP-87/Adopt-Me/refs/heads/main/Xmas-2025"))()
 else
