@@ -1,4 +1,0 @@
-local Players = game:GetService("Players")
-local player = Players.LocalPlayer
-setclipboard("https://youtu.be/3sLzNsHoxXo") -- video lol
-player:Kick("outdated script, new script copied to your clipboard")
